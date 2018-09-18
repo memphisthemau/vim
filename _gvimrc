@@ -92,7 +92,7 @@ function! InitGuiWindow()
 
     " GUI window size
     set lines=50
-    set columns=200
+    set columns=85
     "
     " Set line number
     set number
