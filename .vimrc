@@ -28,10 +28,10 @@ function! InitWin()
     hi colorcolumn ctermbg=4
 
     " Horizontal cursor line
-    set cursorline
+    "set cursorline
 
     " Line numbers
-    set number
+    set nonumber
 endfunction
 
 function! InitSearch()
