@@ -2,6 +2,9 @@ function! InitSyntax()
     syntax on
     colo koehler
     set hlsearch
+
+    hi LineNr ctermfg=DarkGray
+    hi Comment ctermfg=DarkGray
 endfunction
 
 function! InitCursor()
