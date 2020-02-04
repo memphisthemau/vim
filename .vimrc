@@ -34,11 +34,21 @@ function! InitWin()
     "set cursorline
 
     " Line numbers
-    set nonumber
+    "set nonumber
+    set number
 endfunction
 
 function! InitSearch()
     set nowrapscan
+endfunction
+
+function! InitKeyMaps()
+    inoremap " ""<left>
+    inoremap ' ''<left>
+    inoremap ( ()<left>
+    inoremap [ []<left>
+    inoremap { {}<left>
+    inoremap < <lt>><left>
 endfunction
 
 call InitSyntax()
@@ -46,3 +56,4 @@ call InitCursor()
 call InitTabs()
 call InitWin()
 call InitSearch()
+call InitKeyMaps()
