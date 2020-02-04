@@ -16,7 +16,7 @@ function! InitKeyMaps()
     " :verbose map <C-a>
 
     "let skip_loading_mswin=1
-    source $VIMRUNTIME\mswin.vim
+    "source $VIMRUNTIME\mswin.vim
 
     " <C-Y> is mapped to <C-R> in mswin.vim, changing this to unix style
     noremap <C-Y> <C-Y>
@@ -64,6 +64,13 @@ function! InitKeyMaps()
     "\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
     "\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
+    " Auto close parentheses/brackets
+    inoremap " ""<left>
+    inoremap ' ''<left>
+    inoremap ( ()<left>
+    inoremap [ []<left>
+    inoremap { {}<left>
+    inoremap < <lt>><left>
 endfunction
 
 function! InitMouseMaps()
@@ -85,16 +92,20 @@ function! InitGuiWindow()
     "set nowrap
 
     " GUI font
-    "set guifont=Consolas:h9:cANSI
-    "set guifont=Terminus:h9:cANSI
-    set guifont=Terminus:h11:cANSI
+    "set guifont=Consolas:h11:cANSI
     "set guifont=Terminus:h12:cANSI
+    "set guifont=Courier_New:h12:cANSI
+    "set guifont=Fira_Code:h10:cANSI
+    "set guifont=Fira_Code_Retina:h12:cANSI
+    "set guifont=Cascadia_Code:h11:cANSI
+    set guifont=JetBrains_Mono:h11:cANSI
 
     " GUI window size
     set lines=50
     set columns=85
     "
     " Set line number
+    "set nonumber
     set number
 
     " Autoload modified files in current window
@@ -163,6 +174,15 @@ function! InitTabs()
     set expandtab
 endfunction
 
+function! InitSpecialChars()
+    "set list
+    set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+    " NonText colors
+    hi SpecialKey term=bold ctermfg=11 guibg=grey guifg=#181818
+    hi NonText term=bold ctermfg=11 guibg=grey guifg=#181818
+endfunction
+
 function! InitBackup()
     " No backup files
     set nobackup
@@ -192,7 +212,7 @@ function! InitHighlight()
     hi Number guifg=green
     "
     " :help guibg
-    hi colorcolumn guibg=SlateBlue 
+    hi colorcolumn guibg=SlateBlue
 endfunction
 
 function! InitEnv()
@@ -240,6 +260,11 @@ endfunction
 "  let g:netrw_browsex_viewer= "C:\Program Files\Mozilla Firefox\firefox.exe"
 "endfunction
 
+function! InitBeepFlash()
+  " Disable annoying beeping and flashing.
+  set noeb vb t_vb=
+endfunction
+
 " Initialization functions
 call InitFiletypeDetect()
 call InitKeyMaps()
@@ -254,5 +279,6 @@ call InitFuncs()
 call InitAutoRemTrailingWhitespaces()
 call InitWordDelimiterCharacters()
 "call InitHandleURL()
+call InitBeepFlash()
 " Ensure highlights initialized at the end.
 call InitHighlight()
