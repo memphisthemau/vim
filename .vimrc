@@ -42,18 +42,18 @@ function! InitSearch()
     set nowrapscan
 endfunction
 
-function! InitKeyMaps()
-    inoremap " ""<left>
-    inoremap ' ''<left>
-    inoremap ( ()<left>
-    inoremap [ []<left>
-    inoremap { {}<left>
-    inoremap < <lt>><left>
-endfunction
+"function! InitKeyMaps()
+"    inoremap " ""<left>
+"    inoremap ' ''<left>
+"    inoremap ( ()<left>
+"    inoremap [ []<left>
+"    inoremap { {}<left>
+"    inoremap < <lt>><left>
+"endfunction
 
 call InitSyntax()
 call InitCursor()
 call InitTabs()
 call InitWin()
 call InitSearch()
-call InitKeyMaps()
+"call InitKeyMaps()
