@@ -5,6 +5,7 @@ function! InitSyntax()
 
     hi LineNr ctermfg=DarkGray
     hi Comment ctermfg=DarkGray
+    hi Search ctermfg=Black ctermbg=LightMagenta
 endfunction
 
 function! InitCursor()
