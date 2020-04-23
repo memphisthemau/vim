@@ -16,7 +16,7 @@ function! InitKeyMaps()
     " :verbose map <C-a>
 
     "let skip_loading_mswin=1
-    "source $VIMRUNTIME\mswin.vim
+    source $VIMRUNTIME\mswin.vim
 
     " <C-Y> is mapped to <C-R> in mswin.vim, changing this to unix style
     noremap <C-Y> <C-Y>
@@ -65,12 +65,12 @@ function! InitKeyMaps()
     "\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
     " Auto close parentheses/brackets
-    inoremap " ""<left>
-    inoremap ' ''<left>
-    inoremap ( ()<left>
-    inoremap [ []<left>
-    inoremap { {}<left>
-    inoremap < <lt>><left>
+    "inoremap " ""<left>
+    "inoremap ' ''<left>
+    "inoremap ( ()<left>
+    "inoremap [ []<left>
+    "inoremap { {}<left>
+    "inoremap < <lt>><left>
 endfunction
 
 function! InitMouseMaps()
@@ -153,7 +153,6 @@ function! InitCursor()
 
     " Vertical cursor line
     "set cursorcolumn
-    "set guicursor+=i:ver25-iCursor,i:hor1-iCursor
     "highlight cursorcolumn guibg=#696969
 
     " Horizontal cursor line
@@ -164,6 +163,9 @@ function! InitCursor()
 
     " Change Color when entering Insert Mode
     highlight iCursor guibg=red
+
+    " Cursor shape
+    set guicursor=n-v-c:hor10-Cursor
 endfunction
 
 function! InitTabs()
