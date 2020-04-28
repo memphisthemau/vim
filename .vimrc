@@ -1,6 +1,12 @@
 function! InitSyntax()
     syntax on
-    colo koehler
+    
+    " Copy the contents of autoload/ and colors/ into their
+    " respective directories under ~/.vim/.
+    "  ${git}/autoload/onedark.vim -> ~/.vim/autoload/onedark.vim
+    "  ${git}/colors/onedark.vim -> ~/.vim/colors/onedark.vim
+    colo onedark
+    
     set hlsearch
 
     hi LineNr term=None cterm=None ctermfg=DarkGray
