@@ -9,9 +9,9 @@ function! InitSyntax()
     
     set hlsearch
 
-    hi LineNr term=None cterm=None ctermfg=DarkGray
-    hi Comment term=None cterm=None ctermfg=DarkGray
-    hi Search term=None cterm=None ctermfg=Black ctermbg=LightMagenta
+    "hi LineNr term=None cterm=None ctermfg=DarkGray
+    "hi Comment term=None cterm=None ctermfg=DarkGray
+    "hi Search term=None cterm=None ctermfg=Black ctermbg=LightMagenta
 endfunction
 
 function! InitCursor()
