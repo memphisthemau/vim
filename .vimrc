@@ -35,7 +35,7 @@ function! InitWin()
     set colorcolumn=80
 
     " :help ctermbg
-    hi colorcolumn ctermbg=4
+    "hi colorcolumn ctermbg=4
 
     " Horizontal cursor line
     "set cursorline
