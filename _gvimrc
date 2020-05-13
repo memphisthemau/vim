@@ -76,8 +76,8 @@ endfunction
 function! InitMouseMaps()
   " Auto copy the mouse selection
   " http://vim.wikia.com/wiki/Auto_copy_the_mouse_selection
-  noremap <LeftRelease> "+y<LeftRelease>
-  set guioptions+=a
+  "noremap <LeftRelease> "+y<LeftRelease>
+  "set guioptions+=a
 endfunction
 
 function! InitGuiWindow()
@@ -191,30 +191,30 @@ function! InitBackup()
 endfunction
 
 function! InitHighlight()
-    colo slate
+    colorscheme onedark
 
     " Highlights
     "hi Normal guibg=#151515 guifg=white
     "hi Normal guibg=#181818 guifg=white
-    hi Normal guibg=#181818 guifg=grey
+    "hi Normal guibg=#181818 guifg=grey
 
     " Tabs
-    hi TabLine guifg=grey guibg=black gui=none
-    hi TabLineSel guifg=orange guibg=black gui=bold
-    hi TabLineFill guifg=black guibg=black gui=none
+    "hi TabLine guifg=grey guibg=black gui=none
+    "hi TabLineSel guifg=orange guibg=black gui=bold
+    "hi TabLineFill guifg=black guibg=black gui=none
 
     " Line number color
-    hi LineNr guifg=#455656
+    "hi LineNr guifg=#455656
 
     " Comment lines color
     "hi Comment guifg=cyan
     "hi SpecialComment guifg=cyan
 
-    hi Identifier guifg=red
-    hi Number guifg=green
+    "hi Identifier guifg=red
+    "hi Number guifg=green
     "
     " :help guibg
-    hi colorcolumn guibg=SlateBlue
+    "hi colorcolumn guibg=SlateBlue
 endfunction
 
 function! InitEnv()
@@ -270,7 +270,7 @@ endfunction
 " Initialization functions
 call InitFiletypeDetect()
 call InitKeyMaps()
-call InitMouseMaps()
+"call InitMouseMaps()
 call InitGuiWindow()
 call InitCursor()
 call InitTabs()
@@ -284,3 +284,4 @@ call InitWordDelimiterCharacters()
 call InitBeepFlash()
 " Ensure highlights initialized at the end.
 call InitHighlight()
+
