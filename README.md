@@ -1,7 +1,9 @@
 # Vim configurations
 
+- Create a local directory for the repositories.
+
 ```bash
-cd ~/gitrepos
+mkdir -p ~/gitrepos && cd $_
 ```
 
 - Clone the themes.
