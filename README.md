@@ -1,2 +1,38 @@
-# vim
-Vim configurations.
+# Vim configurations
+
+```bash
+cd ~/gitrepos
+```
+
+- Clone the themes.
+
+```bash
+git clone https://github.com/memphisthemau/vim.git
+git clone https://github.com/dracula/vim.git dracula-vim
+git clone https://github.com/joshdick/onedark.vim.git
+```
+
+- Create the necessary directories.
+
+```bash
+mkdir -p ~/.vim/{autoload,colors}
+```
+- Copy the themes.
+
+```bash
+cp ~/gitrepos/dracula-vim/autoload/dracula.vim ~/.vim/autoload/dracula.vim
+cp ~/gitrepos/dracula-vim/colors/dracula.vim ~/.vim/colors/dracula.vim
+cp ~/gitrepos/onedark.vim/autoload/onedark.vim ~/.vim/autoload/onedark.vim
+cp ~/gitrepos/onedark.vim/colors/onedark.vim ~/.vim/colors/onedark.vim
+```
+
+- Copy the custom highlights.
+
+```bash
+cp -a ~/gitrepos/vim/vimfiles/after ~/.vim/
+```
+- Enable syntax highlighting.
+
+```bash
+:colo[rscheme] {onedark|dracula}
+```
