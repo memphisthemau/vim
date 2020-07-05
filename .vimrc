@@ -49,18 +49,15 @@ function! InitSearch()
     set nowrapscan
 endfunction
 
-"function! InitKeyMaps()
-"    inoremap " ""<left>
-"    inoremap ' ''<left>
-"    inoremap ( ()<left>
-"    inoremap [ []<left>
-"    inoremap { {}<left>
-"    inoremap < <lt>><left>
-"endfunction
+function! InitSpecialChars()
+    set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+    set list
+endfunction
+
 
 call InitSyntax()
 call InitCursor()
 call InitTabs()
 call InitWin()
 call InitSearch()
-"call InitKeyMaps()
+call InitSpecialChars()
