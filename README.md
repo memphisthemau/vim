@@ -33,6 +33,13 @@ cp ~/gitrepos/onedark.vim/colors/onedark.vim ~/.vim/colors/onedark.vim
 ```bash
 cp -a ~/gitrepos/vim/vimfiles/after ~/.vim/
 ```
+
+- Create symlink for `.vimrc`.
+
+```bash
+ln -s ~/gitrepos/vim/.vimrc ~/.vimrc
+```
+
 - Enable syntax highlighting.
 
 ```bash
