@@ -98,8 +98,8 @@ function! InitGuiWindow()
     "set guifont=Fira_Code:h10:cANSI
     "set guifont=Fira_Code_Retina:h12:cANSI
     "set guifont=Cascadia_Code:h11:cANSI
-    set guifont=JetBrains_Mono:h11:cANSI
-    set printfont=JetBrains_Mono:h11:cANSI
+    set guifont=JetBrains_Mono:h9:cANSI
+    set printfont=JetBrains_Mono:h9:cANSI
 
     " GUI window size
     set lines=50
