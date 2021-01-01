@@ -1,4 +1,4 @@
-# Vim configurations
+# Setting up themes
 
 - Create a local directory for the repositories.
 
@@ -44,4 +44,12 @@ ln -s ~/gitrepos/vim/.vimrc ~/.vimrc
 
 ```bash
 :colo[rscheme] {onedark|dracula}
+```
+
+# Setting file extension detection and syntax highlighting
+
+```bash
+ln -s ~/gitrepos/vim/vimfiles/ftdetect ~/.vim/ftdetect
+ln -s ~/gitrepos/vim/vimfiles/syntax  ~/.vim/syntax
+ln -s ~/gitrepos/vim/vimfiles/after ~/.vim/after
 ```
