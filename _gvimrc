@@ -84,7 +84,10 @@ function! InitGuiWindow()
     " Encoding
     set encoding=utf-8
 
-    " Enable font ligature rendering.
+    " Enable font ligature rendering. Sometimes the ligatures don't appear
+    " immediately after typing. Manually get it to appear by doing
+    " screen refresh CTRL+L.
+    " Reference: https://github.com/tonsky/FiraCode/issues/462
     set renderoptions=type:directx
 
     " No menu bar
