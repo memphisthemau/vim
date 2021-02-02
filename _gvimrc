@@ -84,6 +84,9 @@ function! InitGuiWindow()
     " Encoding
     set encoding=utf-8
 
+    " Enable font ligature rendering.
+    set renderoptions=type:directx
+
     " No menu bar
     "set guioptions-=m
 
