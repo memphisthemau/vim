@@ -9,7 +9,7 @@ mkdir -p ~/gitrepos && cd $_
 - Clone the themes.
 
 ```bash
-git clone https://github.com/memphisthemau/vim.git
+git clone https://<token>@github.com/memphisthemau/vim.git
 git clone https://github.com/dracula/vim.git dracula-vim
 git clone https://github.com/joshdick/onedark.vim.git
 ```
