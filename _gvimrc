@@ -88,7 +88,7 @@ function! InitGuiWindow()
     " immediately after typing. Manually get it to appear by doing
     " screen refresh CTRL+L.
     " Reference: https://github.com/tonsky/FiraCode/issues/462
-    set renderoptions=type:directx
+    "set renderoptions=type:directx
 
     " No menu bar
     "set guioptions-=m
