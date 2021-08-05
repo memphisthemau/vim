@@ -89,6 +89,7 @@ function! InitGuiWindow()
     " screen refresh CTRL+L.
     " Reference: https://github.com/tonsky/FiraCode/issues/462
     "set renderoptions=type:directx
+    set renderoptions=type:directx,renmode:3
 
     " No menu bar
     "set guioptions-=m
@@ -98,15 +99,9 @@ function! InitGuiWindow()
     "set nowrap
 
     " GUI font
-    "set guifont=Consolas:h11:cANSI
-    "set guifont=Terminus:h12:cANSI
-    "set guifont=Courier_New:h12:cANSI
-    "set guifont=Fira_Code:h10:cANSI
-    "set guifont=Fira_Code_Retina:h12:cANSI
-    set guifont=Cascadia_Mono_PL_SemiLight:h9:cANSI
-    "set guifont=JetBrains_Mono:h10:cANSI
+    set guifont=Cascadia_Mono_PL_SemiLight:h11:cANSI
 
-    "set printfont=JetBrains_Mono:h9:cANSI
+    " Font used for printing.
     set printfont=Cascadia_Mono_PL:h11:cANSI
 
     " GUI window size
