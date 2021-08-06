@@ -99,10 +99,10 @@ function! InitGuiWindow()
     "set nowrap
 
     " GUI font
-    set guifont=Cascadia_Mono_PL_SemiLight:h11:cANSI
+    set guifont=Cascadia_Code_PL:h11:cANSI
 
     " Font used for printing.
-    set printfont=Cascadia_Mono_PL:h11:cANSI
+    set printfont=Cascadia_Code_PL:h11:cANSI
 
     " GUI window size
     set lines=50
@@ -181,7 +181,8 @@ function! InitTabs()
 endfunction
 
 function! InitSpecialChars()
-    set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+    "set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+    set listchars=trail:~,extends:>,precedes:<
     set list
 
     " NonText colors
