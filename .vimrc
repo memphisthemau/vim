@@ -50,8 +50,18 @@ function! InitSearch()
 endfunction
 
 function! InitSpecialChars()
-    set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+    "set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+    set listchars=tab:>-,trail:~,extends:>,precedes:<
     set list
+endfunction
+
+function! InitPowerlineStatusLine()
+  " Install Powerline vim bindings:
+  "   git clone https://github.com/powerline/powerline.git
+  "   sudo python setup.py install
+  set  rtp+=/usr/local/lib/python3.8/dist-packages/powerline_status-2.8.2.dev9999_git.b_82c1373ba0b424c57e8c12cb5f6f1a7ee3829c27_-py3.8.egg/powerline/bindings/vim
+  set laststatus=2
+  set t_Co=256
 endfunction
 
 
@@ -61,3 +71,4 @@ call InitTabs()
 call InitWin()
 call InitSearch()
 call InitSpecialChars()
+call InitPowerlineStatusLine()
